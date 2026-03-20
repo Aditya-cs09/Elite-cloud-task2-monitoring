@@ -1,45 +1,52 @@
-# Elite-cloud-task2-monitoring
-Task2- Cloud monitoring using AWS CloudWatch with dashboards and alerts.
-# ✅ Internship Task 2 - Cloud Monitoring Report
+# Cloud Monitoring using AWS CloudWatch
 
-## 🎯 Task  
-📌 Setup Monitoring for a Cloud-Based Application using AWS CloudWatch
+## Overview
+This project demonstrates how to set up monitoring and alerting for a cloud-based application using AWS CloudWatch. The system tracks resource usage and sends notifications when thresholds are exceeded.
 
-## ☁️ Platform Chosen  
-✅ AWS (Amazon Web Services)
+## Platform
+AWS (Amazon Web Services)
 
-## 🛠️ Tools/Services Used  
-- 🖥️ AWS EC2 (virtual machine)  
-- 📊 AWS CloudWatch (metrics, alarms, dashboards)  
-- 📬 AWS SNS (email notifications)
+## Services Used
+- Amazon EC2 (Virtual Machine)
+- AWS CloudWatch (Metrics, Alarms, Dashboards)
+- AWS SNS (Email Notifications)
 
-## 🎯 Objective  
-- 📈 Monitor CPU Utilization  
-- 🔔 Set up an alert if CPU usage exceeds 50%  
-- 📊 Create a dashboard that shows:  
-  - ✅ CPU Utilization  
-  - ✅ Network In/Out  
-  - ✅ Disk Reads/Writes
+## Objective
+- Monitor CPU Utilization
+- Trigger alerts when CPU usage exceeds 50%
+- Create a dashboard to visualize:
+  - CPU Utilization
+  - Network In/Out
+  - Disk Read/Write Operations
 
-## 🧭 Steps Followed  
-1. ✅ Launched EC2 Instance (t2.micro for demo)  
-2. ✅ Navigated to CloudWatch in AWS Console  
-3. ✅ Created a custom dashboard  
-4. ✅ Added metrics like CPUUtilization, NetworkIn, ESBWriteOps 
-5. ✅ Created an alarm:  
-   - 📈 Metric: CPUUtilization  
-   - ⚠️ Threshold: > 50%  
-   - ✉️ Notification: Email alert (configured via SNS)  
-6. ✅ Verified the alert triggered when load testing was done
+## Implementation Steps
+1. Launched an EC2 instance (t2.micro)
+2. Opened CloudWatch service in AWS Console
+3. Created a custom monitoring dashboard
+4. Added metrics:
+   - CPUUtilization
+   - NetworkIn
+   - DiskReadOps / DiskWriteOps
+5. Configured an alarm:
+   - Metric: CPUUtilization
+   - Threshold: > 50%
+6. Set up SNS topic for email notifications
+7. Tested alert by generating load on EC2 instance
 
-## 📸 Screenshots  
-- 🖼️ Dashboard View  
-- ⚙️ Alert Configuration  
-- 📊 Metrics Overview  
-- 📬 SNS Topic Page
-- 📧 Email notification
+## Results
+- Successfully configured monitoring dashboard
+- Alerts triggered when CPU usage exceeded threshold
+- Email notifications received via SNS
 
-## 📝 Result  
-📌 Monitoring and alerting successfully set up.  
-✅ The system can detect high resource usage and notify via email.
+## Screenshots
+- Dashboard View
+- Alarm Configuration
+- Metrics Overview
+- SNS Setup
+- Email Notification
+
+## Learnings
+- Gained practical experience with AWS CloudWatch
+- Understood monitoring and alerting mechanisms in cloud
+- Learned how to integrate SNS for real-time notifications
 
